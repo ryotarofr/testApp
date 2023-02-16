@@ -1,0 +1,32 @@
+[debug] [2023-02-16T04:02:34.960Z] ----------------------------------------------------------------------
+[debug] [2023-02-16T04:02:34.962Z] Command:       /usr/local/bin/firebase /Users/ryotarofujii/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2023-02-16T04:02:34.962Z] CLI Version:   11.23.1
+[debug] [2023-02-16T04:02:34.962Z] Platform:      darwin
+[debug] [2023-02-16T04:02:34.962Z] Node Version:  v16.16.0
+[debug] [2023-02-16T04:02:34.963Z] Time:          Thu Feb 16 2023 13:02:34 GMT+0900 (GMT+09:00)
+[debug] [2023-02-16T04:02:34.963Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-16T04:02:35.059Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-16T04:02:35.060Z] > authorizing via signed-in user (ryoryo.fr0608@gmail.com)
+[debug] [2023-02-16T04:02:35.060Z] [iam] checking project fr-application for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-02-16T04:02:35.062Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fr-application:testIamPermissions [none]
+[debug] [2023-02-16T04:02:35.063Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fr-application:testIamPermissions x-goog-quota-user=projects/fr-application
+[debug] [2023-02-16T04:02:35.064Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fr-application:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-16T04:02:36.150Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fr-application:testIamPermissions 200
+[debug] [2023-02-16T04:02:36.153Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fr-application:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-02-16T04:02:36.157Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fr-application [none]
+[debug] [2023-02-16T04:02:36.714Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fr-application 200
+[debug] [2023-02-16T04:02:36.718Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fr-application {"projectId":"fr-application","projectNumber":"13197666613","displayName":"FR-Application","name":"projects/fr-application","resources":{"hostingSite":"fr-application"},"state":"ACTIVE","etag":"1_3f61d979-2f5a-4e95-a513-c186ce21b849"}
+[debug] [2023-02-16T04:02:40.919Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fr-application/sites pageToken=&pageSize=10
+[debug] [2023-02-16T04:02:42.025Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fr-application/sites 200
+[debug] [2023-02-16T04:02:42.029Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fr-application/sites {"sites":[{"name":"projects/fr-application/sites/fr-application","defaultUrl":"https://fr-application.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-16T04:02:42.030Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fr-application/sites 
+[debug] [2023-02-16T04:02:43.147Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fr-application/sites 200
+[debug] [2023-02-16T04:02:43.147Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fr-application/sites {"sites":[{"name":"projects/fr-application/sites/fr-application","defaultUrl":"https://fr-application.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-02-16T04:02:43.148Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fr-application/webApps/-/config [none]
+[debug] [2023-02-16T04:02:44.566Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fr-application/webApps/-/config 200
+[debug] [2023-02-16T04:02:44.570Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fr-application/webApps/-/config {"projectId":"fr-application","appId":"1:13197666613:web:be73f2b98d4ec58728047c","storageBucket":"fr-application.appspot.com","apiKey":"AIzaSyBF8oYbHkXc-3DjRTM4UIXU6DloRluf8ZQ","authDomain":"fr-application.firebaseapp.com","messagingSenderId":"13197666613"}
+[debug] [2023-02-16T04:03:02.350Z] Error: Failed to collect page data for /account
+    at /Users/ryotarofujii/Desktop/test4/node_modules/next/dist/build/utils.js:963:15
+[error] 
+[error] Error: An unexpected error has occurred.
